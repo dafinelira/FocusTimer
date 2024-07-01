@@ -19,12 +19,12 @@ html.light {
     --hue: 194;
     --text-color: hsl(var(--hue), 5%, 7%);
     --bg-color: hsl(var(--hue), 40%, 98%) ;    
-    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --controls-bg-color: hsl(var(--hue), 0%, 96%);
 
 }
 
 html.light .ph-sun,
-html:not(light) .ph-moon {
+html:not(.light) .ph-moon {
     display: none;
 }
 
