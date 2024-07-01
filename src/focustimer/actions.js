@@ -13,7 +13,7 @@ export function set() {
     
 }
 
-export function toggleMusic () {
+export function toggleMusic () {3
     state.isMute = document.documentElement.classList.toggle('music-on')
 }
 
