@@ -8,6 +8,7 @@ export function registerControls () {
             return
         }
 
+        actions[action]()
         
     })
 }
