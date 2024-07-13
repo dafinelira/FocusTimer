@@ -4,6 +4,9 @@ import { reset } from "./actions.js"
 import {kitchenTimer} from "./sounds.js"
 
 export function countdonw() {
+
+    clearTimeout(state.countdonwId)
+
     if(!state.isRunning) {
         return
     }
@@ -26,7 +29,7 @@ export function countdonw() {
 
     updateDisplay(minutes,seconds)
 
-    setTimeout(() => countdonw(), 1000)
+    state.countdonwId = setTimeout(() => countdonw(), 1000)
 }
 
 export function updateDisplay(minutes,seconds){
